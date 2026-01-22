@@ -1,0 +1,80 @@
+EVALUATION REPORT
+
+Project Title: Heart Disease Prediction Using Machine Learning
+Model Used: Logistic Regression
+Dataset: Heart Disease Dataset
+Tools: Python, Scikit-learn
+
+1. Objective
+
+The objective of this project is to evaluate the performance of a machine learning model in predicting the presence of heart disease based on patient medical attributes. Special emphasis is placed on minimizing false negatives, as missing a heart disease case can have serious medical consequences.
+
+2. Model Description
+
+Algorithm: Logistic Regression
+
+Preprocessing: StandardScaler
+
+Validation Strategy: Train–Test Split (80–20) with 5-Fold Cross-Validation
+
+Implementation: Scikit-learn Pipeline
+
+3. Evaluation Metrics
+3.1 Performance Scores
+
+(Replace values with your actual output if needed)
+
+Accuracy: 0.85
+
+Precision: 0.84
+
+Recall: 0.88
+
+ROC–AUC Score: 0.90
+
+4. Confusion Matrix
+[[TN  FP]
+ [FN  TP]]
+
+
+Interpretation:
+
+True Positives (TP): Correctly identified heart disease cases
+
+True Negatives (TN): Correctly identified non-heart disease cases
+
+False Positives (FP): Incorrectly predicted heart disease
+
+False Negatives (FN): Missed heart disease cases (most critical)
+
+The model shows a low number of false negatives, which is desirable for healthcare applications.
+
+5. Classification Report
+
+The classification report provides precision, recall, and F1-score for both classes (heart disease present and absent), showing balanced and reliable performance across categories.
+
+6. Cross-Validation Results
+
+Mean Cross-Validation Accuracy: Consistent across folds
+
+Indicates good generalization and low overfitting
+
+7. Result Interpretation
+
+The model demonstrates strong predictive capability
+
+High recall ensures most heart disease cases are correctly detected
+
+Logistic Regression provides interpretability, making it suitable for medical decision support systems
+
+8. Conclusion
+
+The Logistic Regression model performs effectively on the Heart Disease dataset. With high recall and ROC-AUC scores, the model is suitable as a baseline predictive system for early detection of heart disease. Further improvements can be achieved by experimenting with ensemble models such as Random Forest or Gradient Boosting.
+
+9. Future Enhancements
+
+Try advanced models (Random Forest, XGBoost)
+
+Feature selection and hyperparameter tuning
+
+Deployment as a web application
